@@ -1,0 +1,219 @@
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;   
+}
+
+
+h1 { color: white;
+     font-size: 45px; }
+
+h1:hover {
+
+    color: brown;
+    
+
+}
+
+
+ul li {
+    display: inline-block;
+    padding:0px 20px; 
+}
+
+a {
+
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+
+
+}
+
+.body {
+
+    background-color: black;
+}
+
+
+#fondo {
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(fondo.jpg);
+}
+
+.mimusica {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+h2 {
+
+    color: white    ;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo
+{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.slider-box {
+width: 800px;
+height: auto;
+margin: 50px auto 0;
+overflow: hidden;
+
+}
+
+.slider-box ul{
+
+    display: flex;
+    padding: 0;
+    width:400%;
+    animation: slide 20s infinite 
+    alternate ease-in-out;
+    
+}
+
+.slider-box li {
+
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: wheat;
+    font-size: 15px;
+
+}
+
+.texto h3 {
+    font-size: 25px;
+    margin-bottom: 6px;
+    color: brown;
+}
+
+.slider-box img {
+    width: 100%;
+}
+
+.bloque2 {
+
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+
+.bloque3 {
+
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-image: url(logo.png);
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.submenu{
+
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slide {
+    0% { margin-left: 0;}
+    20% { margin-left: 0;}
+
+    30% { margin-left: -100%;}
+    40% { margin-left: -100%;}
+
+    50% { margin-left: -200%;}
+    60% { margin-left: -200%;}
+
+    70% { margin-left: -300%;}
+    100% { margin-left: -300%;}
+
+}
+
+
+.song-list {
+    margin: 20px;
+  }
+  
+  .song {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .song:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: none; /* Initially hidden */
+    padding: 10px;
+  }
+  
+  audio {
+    width: 100%;
+  }
